@@ -1,0 +1,1 @@
+echo -e "hello\nworld\ni'm john\nMSG=${MSG}"
