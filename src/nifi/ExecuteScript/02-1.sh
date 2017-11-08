@@ -1,0 +1,1 @@
+cat /home/nifi/02.txt
