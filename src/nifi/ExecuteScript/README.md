@@ -18,6 +18,7 @@ key | value
 -|-
 Script Engine | ECMAScript
 Script Body |
+```
 var InputStreamCallback =  Java.type("org.apache.nifi.processor.io.InputStreamCallback");
 var OutputStreamCallback =  Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
 var IOUtils = Java.type("org.apache.commons.io.IOUtils");
@@ -44,7 +45,7 @@ if(flowFile != null) {
     session.transfer(flowFile, REL_FAILURE)
   }
 }
-
+```
 
 * PutFile
 
