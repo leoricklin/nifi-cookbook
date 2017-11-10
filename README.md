@@ -8,10 +8,5 @@
 ## fio
 ## iperf
 
-# Recipes
-## recipe: get message from kafka topic
-### use case: 
-### approach:
-### examples:
 
 
