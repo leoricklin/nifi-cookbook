@@ -6,15 +6,18 @@ refer [ExecuteScript Cookbook (part 1)](https://community.hortonworks.com/articl
 ## Examples:
 
 * ExecuteProcess
-```
-Command = /home/nifi/run1.sh
-MSG = this is message
-```
+
+key | value
+-|-
+Command | /home/nifi/run1.sh
+MSG | this is message
 
 * ExecuteScript
-```
-Script Engine = ECMAScript
-Script Body =
+
+key | value
+-|-
+Script Engine | ECMAScript
+Script Body |
 var InputStreamCallback =  Java.type("org.apache.nifi.processor.io.InputStreamCallback");
 var OutputStreamCallback =  Java.type("org.apache.nifi.processor.io.OutputStreamCallback");
 var IOUtils = Java.type("org.apache.commons.io.IOUtils");
@@ -41,12 +44,13 @@ if(flowFile != null) {
     session.transfer(flowFile, REL_FAILURE)
   }
 }
-```
+
 
 * PutFile
-```
-Directory = /home/nifi/output.log
-```
+
+key | value
+-|-
+Directory | /home/nifi/output.log
 
 * chmod & clean up output directory
 ```
@@ -74,21 +78,24 @@ refer [ExecuteScript Cookbook (part 2)](https://community.hortonworks.com/articl
 ## Examples:
 
 * ExecuteProcess
-```
+
+key | value
+-|-
 Command = /home/nifi/02-1.sh
 MSG = this is message
-```
 
 * ExecuteScript
-```
+
+key | value
+-|-
 Script Engine = python
 Script File = /home/nifi/02-1.py
-```
 
 * PutFile
-```
+
+key | value
+-|-
 Directory = /home/nifi/output.log
-```
 
 * chmod & clean up output directory
 ```
@@ -114,23 +121,26 @@ refer [ExecuteScript Cookbook (part 3)](https://community.hortonworks.com/articl
 ## Examples:
 
 * ExecuteProcess
-```
-Command = /home/nifi/02-1.sh
-MSG = this is message
-```
+
+key | value
+-|-
+Command | /home/nifi/02-1.sh
+MSG | this is message
 
 * ExecuteScript
-```
-Script Engine = python
-Script File = /home/nifi/03-1.py
-actionname = record-sample
-feedname = ran.bdokafka-bdoredis
-```
+
+key | value
+-|-
+Script Engine | python
+Script File | /home/nifi/03-1.py
+actionname | record-sample
+feedname | ran.bdokafka-bdoredis
 
 * PutFile
-```
-Directory = /home/nifi/output.log
-```
+
+key | value
+-|-
+Directory | /home/nifi/output.log
 
 * chmod & clean up output directory
 ```
