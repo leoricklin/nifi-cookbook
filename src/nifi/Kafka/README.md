@@ -17,7 +17,9 @@ $base_dir/bin/kafka-consumer-perf-test.sh --broker-list ${BROKERS} --group ${CON
 ```
 
 * ConsumeKafka
-```
+
+key | value
+-|-
 Type | ConsumeKafka_0_10 1.2.0.3.0.0.0-453
 Penalty duration | 30 sec
 Yield duration | 0 sec
@@ -34,10 +36,11 @@ Max Poll Records | 20000
 Max Uncommitted Time | 3 secs
 max.partition.fetch.bytes | 10485760
 receive.buffer.bytes | 1048576
-```
 
 * PublishKafka
-```
+
+key | value
+-|-
 Type | PublishKafka_0_10 1.2.0.3.0.0.0-453
 Penalty duration | 30 sec
 Yield duration | 1 sec
@@ -55,7 +58,7 @@ Acknowledgment Wait Time | 5 secs
 Max Metadata Wait Time | 5 sec
 Partitioner class | DefaultPartitioner
 Compression Type | none
-```
+
 
 * execute nifi flow
 
