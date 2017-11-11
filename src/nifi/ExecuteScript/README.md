@@ -166,3 +166,4 @@ read the value of Nifi expression
 * set the dynamic properties of ExecuteScript with Nifi Expression, e.g: ${fileSize:toNumber():toString()} 
 * read the dynamic properties in script block
 ## Examples:
+
