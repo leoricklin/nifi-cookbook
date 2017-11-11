@@ -94,7 +94,7 @@ $ curl --compressed -H "Accept: application/json" -X GET "http://localhost:8088/
 
 key | value
 -|-
-URL | http://localhost:8088/ws/v1/cluster/apps/r/apps/application_1508258610180_0005
+URL | http://localhost:8088/ws/v1/cluster/apps/
 Filename | ${now():toNumber()}
 Accept Content-Type | application/json
 
